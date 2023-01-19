@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans";
+  font-style: normal;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.menuBurger {
+  display: none;
+}
+.header-bg-top {
+  background-color: #000000;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+}
+.header-bg-bottom {
+  background-color: #0f0f0f;
+}
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.header-bottom > div {
+  display: flex;
+  align-items: center;
+}
+.header-bottom > div a {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  width: 136px;
+  padding: 31px 15px;
+  text-align: center;
+}
+.header-bottom > div a:hover {
+  background-color: #1f1f1f;
+}
+.header-bottom > div img {
+  cursor: pointer;
+}
+.header-bottom > div img:nth-child(4) {
+  margin: 0 20px;
+}
+.header-bg-bottom > div > div img:last-child {
+  display: none;
+}
+.about {
+  background-image: url(../img/Картинка1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about > div {
+  width: 260px;
+  height: 260px;
+  border: 4px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.about > div > img {
+  width: 52%;
+  margin-bottom: 10px;
+}
+.about > div span {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 5px;
+}
+.about > p {
+  width: 41%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.season {
+  height: 100vh;
+  display: flex;
+}
+.season .left {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000;
+}
+.season .left h1,
+.season .right h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.season .left span,
+.new-arrival span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.season .left > div,
+.new-arrival > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.new-arrival > div{
+  flex-wrap: wrap;
+}
+.new-arrival > div .season .left > div > div,
+.new-arrival > div > div {
+  margin: 0px;
+}
+.season .left > div > div > div,
+.new-arrival > div > div > div {
+  background-color: #191b1c;
+  width: 210px;
+  height: 270px;
+  padding: 35px 0;
+  margin-bottom: 15px;
+  margin: 10px;
+}
+.season .left img,
+.new-arrival img {
+  width: 100%;
+}
+.season .right {
+  width: 45%;
+  height: 100%;
+  border: 1px solid black;
+  background-image: url(../img/men.svg);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.season .right a,
+.col-right a {
+  margin: 30px 0 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 12px 25px;
+}
+.collection {
+  height: 80vh;
+  display: flex;
+}
+.collection .col-left {
+  height: 100%;
+  width: 45%;
+  background-image: url(../img/Men2.svg);
+  background-size: cover;
+}
+.collection .col-right {
+  height: 100%;
+  width: 55%;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.col-right h1 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 50px;
+}
+.col-right p {
+  width: 65%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}
+.new-arrival {
+  background-color: #000000;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.new-arrival h1,
+.brands h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 50px;
+}
+.brands {
+  background-color: #0f0f0f;
+  height: 290px;
+}
+.brands > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.brands > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brands > div > div img {
+  width: 24%;
+}
+footer {
+  background-image: url(../img/Rectangle\ 155.svg);
+  background-size: cover;
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+footer > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer > div > div {
+  width: 30%;
+}
+footer h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+footer p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.links a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #d0d0d0;
+  text-decoration: none;
+  background-color: #0f0f0f;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+footer input {
+  width: 190px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0.4);
+  outline: none;
+}
+footer input::placeholder {
+  color: #fff;
+  padding-left: 20px;
+}
+footer button {
+  background-color: #0f0f0f;
+  width: 120px;
+  height: 42px;
+  color: #fff;
+  cursor: pointer;
+}
+.copy-right {
+  background-color: #0f0f0f;
+}
+.copy-right span {
+  color: #fff;
+}
+.copy-right > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    background-position: center;
+  }
+  .season {
+    flex-direction: column;
+    height: 100%;
+  }
+  .season .left {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .season .right {
+    width: 100%;
+    height: 100vh;
+  }
+  .new-arrival > div {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .new-arrival {
+    height: 100%;
+  }
+  .collection .col-right {
+    width: 100%;
+    height: 100vh;
+  }
+  .collection .col-left {
+    width: 100%;
+    height: 100vh;
+  }
+  .collection {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .season .left > div > div > div {
+    margin: 10px;
+  }
+}
+@media (max-width: 996px) {
+  .new-arrival > div {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 768px) {
+  .header-bottom > div a {
+    display: none;
+  }
+  .header-bg-bottom > div > div img:last-child {
+    margin-left: 20px;
+    display: block;
+  }
+  footer {
+    height: 100%;
+    padding: 50px 0;
+  }
+  .season .left > div > div > div {
+    width: 172px;
+    height: 230px;
+  }
+  .collection .col-left {
+    display: none;
+  }
+  footer > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer > div > div {
+    width: 400px;
+    text-align: center;
+  }
+  .season .left > div > div > div {
+    width: 140px;
+    height: 199px;
+  }
+  .season .left > div {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .header-top div:first-child {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .about {
+    padding: 50px 0;
+  }
+  .about > p {
+    width: 80%;
+  }
+  .col-right p {
+    width: 80%;
+    font-size: 18px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  .new-arrival{
+    padding-bottom: 50px;
+  }
+  .new-arrival >div{
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
